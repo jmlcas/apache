@@ -9,7 +9,7 @@ services:
             - "80:80"
             - "443:443"
         volumes:
-            - ./htdocs:/usr/local/apache2/htdocs/
+            - ./public-html/:/usr/local/apache2/htdocs/
         restart: unless-stopped 
 
         
